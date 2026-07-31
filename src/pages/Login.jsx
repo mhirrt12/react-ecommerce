@@ -20,7 +20,7 @@ const Login = () => {
     type="password"
     {...register("password")}
 />
-                <input type="submit" placeholder="Login"/>
+                <button type="submit">Login</button>
 
         </form>
         
