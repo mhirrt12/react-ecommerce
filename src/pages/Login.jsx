@@ -1,7 +1,8 @@
 import {useForm} from "react-hook-form"
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import dashboard from "./Dashboard"
+// import dashboard from "./Dashboard"
+import {login} from "../features/auth/authSlice"
 const Login = () => {
 
     // React Hook Form here
