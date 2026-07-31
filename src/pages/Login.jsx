@@ -1,5 +1,19 @@
+import {useForm} from "react-hook-form"
+
 const Login = () => {
-    return <h1>Login Page</h1>;
+
+    // React Hook Form here
+
+    const onSubmit = (data) => {
+        console.log(data);
+    };
+
+    return (
+        <>
+        
+        
+        </>
+    );
 };
 
 export default Login;
