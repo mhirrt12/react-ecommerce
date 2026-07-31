@@ -1,4 +1,4 @@
-import {useForm} from "react-hook-form"
+import {useForm,handleSubmit} from "react-hook-form"
 
 const Login = () => {
 
@@ -11,7 +11,10 @@ const Login = () => {
     return (
         <>
             <form onSubmit={handleSubmit(onSubmit())}>
-                
+                <input type="email" /><br /><br />
+                <input type="password" /><br /><br />
+                <input type="submit" placeholder="submit"/>
+
         </form>
         
         </>
