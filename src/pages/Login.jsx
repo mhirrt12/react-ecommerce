@@ -1,10 +1,10 @@
-import {useForm} from "react-hook-form"
+import {useForm,useDispatch} from "react-hook-form"
 
 const Login = () => {
 
     // React Hook Form here
     const { register, handleSubmit } = useForm();
-
+    const dispatch= useDispatch();
     const onSubmit = (data) => {
         console.log(data);
     };
