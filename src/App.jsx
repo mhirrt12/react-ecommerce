@@ -4,8 +4,9 @@ import Login from "./pages/Login"
 import Products from "./pages/Products"
 import NotFound from "./pages/NotFound"
 import ProductDetails from "./pages/ProductDetails"
-import Dashboared from "./pages/Dashboard"
+import Dashboard from "./pages/Dashboard"
 import Cart from "./pages/Cart"
+import ProtectedRoute from "./components/ProtectedRoute"
 
   function App() {
           
@@ -15,7 +16,13 @@ import Cart from "./pages/Cart"
         <Route path={"/login"} element={<Login />} />
         <Route path={"/products"} element={<Products />} />
         <Route path={"/cart"} element={<Cart />} />
-        <Route path={"/dashboard"} element={<Dashboared /> }/>
+        <Route path="/dashboard"
+ element={
+    <ProtectedRoute>
+        <Dashboard />
+    </ProtectedRoute>
+ }
+/>
         <Route path={"/product/:id"} element={<ProductDetails />} />
         <Route path={"*"} element={<NotFound />} />
       </Routes>
